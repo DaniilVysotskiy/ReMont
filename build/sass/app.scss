@@ -1,0 +1,23 @@
+/* Переменные */
+$brand-color: #ee3d89;
+
+@import "vendor/bootstrap/bootstrap-flex";
+@import "header";
+@import "content";
+@import "footer";
+@import "modals";
+@import "rwd";
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&subset=cyrillic");
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #efefef;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+}

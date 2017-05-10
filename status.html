@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Статус ремонта</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container container--shadow">
+		<div id="header"></div>
+
+		<main class="main">
+			<div class="status">
+				<h1>Статус ремонта</h1>
+			 	<section class="status__form-b">
+			 		<div class="description">
+				 		<div class="icon">
+				 			<img src="/assets/img/Icon_info.png">
+				 		</div>
+				 		<div>
+				 			<p>
+				 				Узнайте статус ремонта по номеру квитанции. Введите номер квитанции и узнайте: готов аппарат или нет, в каком он сейчас офисе и другую информацию. Данные берутся напрямую из нашей системы учета.
+				 			</p>
+				 			<p>
+				 				Функционал настраивается, информация иногда обновляется с запозданием. Пожалуйста, получайте актуальную информацию по телефону сервиса.
+				 			</p>
+				 		</div>
+			 		</div>
+			 		<div class="form">
+			 			<form>
+			 				<div class="try-b">
+			 					Попробуйте:&nbsp;<a href="#0">48473</a>
+			 				</div>
+			 				<div>
+			 					<input type="text" id="status-number" name="status-number">
+			 					<button type="submit" class="link-btn">Отправить</button>
+			 				</div>
+			 				<div class="result-message">
+			 					<strong>Ремонт не найден!</strong>
+			 				</div>
+			 			</form>
+			 		</div>
+			 	</section>
+			 	<section class="status__result">
+			 		<ul>
+			 			<li class="result-item">
+			 				<div>
+			 					<img src="/assets/img/Icon_repair.png">
+			 				</div>
+			 				<div>
+			 					<strong>
+			 						Ремонт:
+			 					</strong>
+			 					<span>
+			 						#48473
+			 					</span>
+			 				</div>
+			 			</li>
+			 			<li class="result-item">
+			 				<div>
+			 					<img src="/assets/img/Icon_status.png">
+			 				</div>
+			 				<div>
+			 					<strong>
+			 						Статус:
+			 					</strong>
+			 					<span>
+			 						Готов
+			 					</span>
+			 				</div>
+			 			</li>
+			 			<li class="result-item">
+			 				<div>
+			 					<img src="/assets/img/Icon_ruble.png">
+			 				</div>
+			 				<div>
+			 					<strong>
+			 						Стоимость:
+			 					</strong>
+			 					<span>
+			 						2 800 руб.
+			 					</span>
+			 				</div>
+			 			</li>
+			 			<li class="result-item">
+			 				<div>
+			 					<img src="/assets/img/Icon_model.png">
+			 				</div>
+			 				<div>
+			 					<strong>
+			 						Модель:
+			 					</strong>
+			 					<span>
+			 						iPhone 4s (Черный)
+			 					</span>
+			 				</div>
+			 			</li>
+			 			<li class="result-item">
+			 				<div>
+			 					<img src="/assets/img/Icon_office.png">
+			 				</div>
+			 				<div>
+			 					<strong>
+			 						Офис:
+			 					</strong>
+			 					<span>
+			 						Цветной бульвар
+			 					</span>
+			 				</div>
+			 			</li>
+			 		</ul>
+			 	</section>
+
+			</div>
+		</main>
+
+
+		<div id="footer"></div>
+	</div>
+	
+	<div id="scripts"></div>
+	
+	<script type="text/javascript">
+		$('#header').load('header.html');
+		$('#footer').load('footer.html');
+		$('#scripts').load('scripts.html');
+	</script>
+</body>
+</html>

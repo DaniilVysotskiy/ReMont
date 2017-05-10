@@ -1,0 +1,93 @@
+.modal {
+	position: fixed;
+	display: none;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	background-color: rgba(0,0,0,.5);
+	z-index: 9999;
+	&.active {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__dialog {
+		display: flex;
+		position: relative;
+		background-color: #fff;
+		padding: 40px 55px;
+		border-radius: 10px;
+		min-width: 675px;
+		& > button {
+			position: absolute;
+			right: 15px;
+			top: 15px;
+			width: 20px;
+			height: 17px;
+			background: url('../img/cross.png') no-repeat;
+			background-size: contain;
+			border: none;
+		}	
+	}
+	&__content {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		position: relative;
+	}
+	&__header {
+		display: flex;
+		flex-flow: row nowrap;
+		& img {
+			margin-right: 10px;
+		}
+	}
+	&__title {
+		font-size: 22px;
+		line-height: 0.864;
+		font-weight: normal;
+	}
+	&__body {
+		flex: 1;
+		display: flex;
+		& form {
+			flex: 1;
+			display: flex;
+			position: relative;
+			flex-direction: column;
+			justify-content: flex-start;
+			& > * {
+				margin-top: 10px;
+			}
+			& .paired {
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-between;
+			}
+			& label {
+				display: flex;
+				flex-direction: column;
+				min-width: 270px;
+			}
+			& input,
+			& textarea {
+				border: 1px solid #d6d6d6;
+				border-radius: 3px;
+				color: #333333;
+				padding: 3px 7px;
+			}
+			& .button-wrapper {
+				text-align: right;
+				& button {
+					background-color: #ee3d89;
+					color: #fff;
+					border: 0;
+					padding: 5px 20px;
+					margin-top: 30px; 
+				}
+			}
+		}
+	}
+}

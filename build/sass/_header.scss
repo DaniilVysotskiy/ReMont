@@ -1,0 +1,128 @@
+.header {
+	display: block;
+	&__top-b,
+	&__middle-b,
+	&__bottom-b {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 35px;
+	}
+	&__top-b {
+		min-height: 80px;
+		background-color: #000;
+		& .right-b {
+			display: flex;
+			flex-direction: column;
+			& .courier {
+				text-align: right;
+				margin-bottom: 5px;
+				& img {
+					width: 25px;
+					height: 25px;
+				}
+			}
+		}
+	}
+	&__middle-b {
+		min-height: 50px;
+		background-color: #fff;
+		& nav {
+			flex: 1;
+			font-size: 16px;
+			font-family: "PT Sans", sans-serif;
+			color: #2c2c2c;
+			font-weight: bold;
+			line-height: 1.188;
+			& ul {
+				display: flex;
+				justify-content: space-between;
+				list-style: none;
+				margin: 0;
+				& li {
+					&:hover a,
+					&.active a {
+						border-bottom: 1px solid #2c2c2c;
+					}
+					& a {
+						color: inherit;
+						text-decoration: none;
+					}
+				}
+			}
+		} 
+	}
+	&__bottom-b {
+		min-height: 210px;
+		background-color: #f0f0f0;
+		justify-content: center;
+		overflow: hidden;
+		& .repair {
+			padding: 0;
+			margin: 0;
+			& ul {
+				display: flex;
+				justify-content: center;
+				align-items: flex-end;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				font-size: 17px;
+				font-family: "PT Sans", sans-serif;
+				color: #000;
+				line-height: 1.118;
+				text-align: center;
+				& li {
+					position: relative;
+					& span {
+						border-bottom: 1px solid transparent;
+					}
+					&:hover {
+						& span {
+							color: $brand-color;
+							border-bottom: 1px solid $brand-color;
+						}
+					}
+					&.active {
+						&::after {
+							content: '';
+							display: block;
+							position: absolute;
+							left: 50%;
+							bottom: -60px;
+							width: 25px;
+							height: 25px;
+							background-color: #fff;
+							transform: rotate(45deg) translateX(-50%);
+						}
+						& span {
+							color: $brand-color;
+							border-bottom: 1px solid $brand-color;
+						}
+					}
+					& + li {
+						margin-left: 100px;
+					}
+					& a {
+						display: flex;
+						flex-direction: column;
+						text-align: center;
+						color: inherit;
+						text-decoration: none;
+						& div:first-child {
+							display: flex;
+							justify-content: center;
+							& img {
+								width: auto;
+							}
+						}
+						& div:last-child {
+							margin-top: 10px;
+							white-space: nowrap;
+						}
+					}
+				}
+			}
+		}
+	}
+}

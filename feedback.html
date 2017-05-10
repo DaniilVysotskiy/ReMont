@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Модель</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container container--shadow">
+		<div id="header"></div>
+
+		<main class="main">
+			<div class="feedback">
+				<h1>Отзывы и рекомендации</h1>
+				<section class="advantages-list">
+					<ul>
+						<li>
+							<img src="/assets/img/Repairs_icon.png" alt="Срочный ремонт">
+							<span>Срочный ремонт<br>15 минут</span>
+						</li>
+						<li>
+							<img src="/assets/img/Guarantee_icon.png" alt="Гарантия">
+							<span>Гарантия на работы<br>и запчасти</span>
+						</li>
+						<li>
+							<img src="/assets/img/Home_icon.png" alt="Выезд на дом">
+							<span>Выезд мастера,<br>бесплатная доставка</span>
+						</li>
+					</ul>
+				</section>
+
+				<section class="feedback__form">
+					<h2>Оставьте отзыв о нашей работе</h2>
+					<div class="flex-b">
+						<form action="" method="post">
+							<input type="text" name="name" placeholder="Ваше имя">
+							<textarea rows="9" name="feedback" placeholder="Текст отзыва"></textarea>
+							<div class="bottom-b">
+								<div>
+									<span>Оценка:</span>
+									<span class="stars-i">
+										<label>
+											<img src="/assets/img/Star_Outline.svg">
+											<input hidden name="star" type="radio" id="1">
+										</label>
+										<label>
+											<img src="/assets/img/Star_Outline.svg">
+											<input hidden name="star" type="radio" id="2">
+										</label>
+										<label>
+											<img src="/assets/img/Star_Outline.svg">
+											<input hidden name="star" type="radio" id="3">
+										</label>
+										<label>
+											<img src="/assets/img/Star_Outline.svg">
+											<input hidden name="star" type="radio" id="4">
+										</label>
+										<label>
+											<img src="/assets/img/Star_Outline.svg">
+											<input hidden name="star" type="radio" id="5">
+										</label>
+									</span>
+								</div>
+								<div>
+									<button type="submit" class="link-btn link-btn--filled">Отправить</button>
+								</div>
+							</div>
+						</form>
+						<div class="image-b">
+							<img src="/assets/img/Feedback_pic.jpg">
+						</div>
+					</div>
+				</section>
+
+				<section class="feedback__items-b">
+					<ul>
+						<li class="feedback__item">
+							<div>
+								<span class=feedback__item__name>
+									Иван Петров
+								</span>
+								<span class="feedback__item__rating">
+									<img src="/assets/img/Star_fill.svg">
+									<img src="/assets/img/Star_fill.svg">
+									<img src="/assets/img/Star_fill.svg">
+									<img src="/assets/img/Star_fill.svg">
+									<img src="/assets/img/Star_fill.svg">
+								</span>
+							</div>
+							<div>
+								<svg 
+								 xmlns="http://www.w3.org/2000/svg"
+								 xmlns:xlink="http://www.w3.org/1999/xlink"
+								 width="17px" height="12px">
+								<image  x="0px" y="0px" width="17px" height="12px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAMCAMAAACz+6aNAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAbFBMVEUAAADOPIbNO4XNO4XNO4XNO4XOPIbOPIbNO4XOPIbOPIbOPIbNO4XOPIbOPIbNO4XOPIbNO4XNO4XOPIbNO4XNO4XOPIbNO4bOPIbOPIbNO4XNO4XNO4bNO4bOPIbNO4XNO4bNO4XOPIb///9SK0OKAAAAIXRSTlMAUN/vYHAwr0BAgGCA3+8wcL+vEFAgz4Agj8+fr9+/EM8xX55AAAAAAWJLR0QjKmJsOgAAAAd0SU1FB+EFCgoSNgxIbQ8AAACMSURBVAjXJY7bEoMgDERXURBUUGmpvWmT///IJpiXPbOZnAnQtMSmA9AbotYCDbnBBx4xcfDeGYvZyRohJl4U1g3kFTIH0sSNwPdK5THjWiGOlXjhXdMSnnEQ2NmWVxLoIvBmwd4gF14zto/UqQ35G9TKPrFe4JhcPKus+R3VerD8pUOx5KspVwESEf6UWQiDtKdqfAAAAABJRU5ErkJggg==" />
+								</svg>
+								<p>
+									Из-за неосторожности в воду упал Ipad. Поскольку уже менял у них сенсорное стекло (тоже у Ipad) и остался удовлетворен как ценами, так и сервисом, вопрос о том, куда обратиться не стоял. Оставил заявку, договорился с менеджером о визите мастера. Парень провел диагностику, озвучил цену (она меня устроила), забрал прибор и обещал, что мне позвонят. Кстати, на ремонт заключается официальный договор, так что все по-белому. Оператор отзвонился буквально на следующий день, мол, ремонт закончен, готовы привезти (бесплатно!). Ни разу не сталкивался с таким сервисом. Всегда приятно иметь дело с профессионалами и чувствовать себя ценным клиентом.
+								</p>
+							</div>
+						</li>
+						<li class="feedback__item">
+							<div>
+								<span class=feedback__item__name>
+									Мария Иванова
+								</span>
+								<span>
+									<img src="/assets/img/Star_fill.svg">
+									<img src="/assets/img/Star_fill.svg">
+									<img src="/assets/img/Star_fill.svg">
+									<img src="/assets/img/Star_fill.svg">
+									<img src="/assets/img/Star_Outline.svg">
+								</span>
+							</div>
+							<div>
+								<svg 
+								 xmlns="http://www.w3.org/2000/svg"
+								 xmlns:xlink="http://www.w3.org/1999/xlink"
+								 width="17px" height="12px">
+								<image  x="0px" y="0px" width="17px" height="12px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAMCAMAAACz+6aNAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAbFBMVEUAAADOPIbNO4XNO4XNO4XNO4XOPIbOPIbNO4XOPIbOPIbOPIbNO4XOPIbOPIbNO4XOPIbNO4XNO4XOPIbNO4XNO4XOPIbNO4bOPIbOPIbNO4XNO4XNO4bNO4bOPIbNO4XNO4bNO4XOPIb///9SK0OKAAAAIXRSTlMAUN/vYHAwr0BAgGCA3+8wcL+vEFAgz4Agj8+fr9+/EM8xX55AAAAAAWJLR0QjKmJsOgAAAAd0SU1FB+EFCgoSNgxIbQ8AAACMSURBVAjXJY7bEoMgDERXURBUUGmpvWmT///IJpiXPbOZnAnQtMSmA9AbotYCDbnBBx4xcfDeGYvZyRohJl4U1g3kFTIH0sSNwPdK5THjWiGOlXjhXdMSnnEQ2NmWVxLoIvBmwd4gF14zto/UqQ35G9TKPrFe4JhcPKus+R3VerD8pUOx5KspVwESEf6UWQiDtKdqfAAAAABJRU5ErkJggg==" />
+								</svg>
+								<p>
+									Ребята реально спасли. У меня поломался макбук, когда нужно было доделывать срочный проект - монитор просто потух и перестал показывать что-либо. Вызвала мастера на дом, тот уже через час приехал, поколдовал над буком полчаса - все заработало! Была какая-то несерьезная неисправность, так что в офис его везти на ремонт не потребовалось. Я не знаю другого сервиса, который бы так оперативно работал, притом не за космические деньги. Проект сдан вовремя, макбук работает исправно, спасибо!
+								</p>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</div>
+		</main>
+
+
+		<div id="footer"></div>
+	</div>
+	
+	<div id="scripts"></div>
+	
+	<script type="text/javascript">
+		$('#header').load('header.html');
+		$('#footer').load('footer.html');
+		$('#scripts').load('scripts.html');
+	</script>
+</body>
+</html>
