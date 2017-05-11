@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	//Common slider
+	//Slider init
 	if ($('#slider-item').length) {
 		$('#slider-item').owlCarousel({
 			items: 1,
@@ -9,7 +9,7 @@ $(document).ready(function(){
 		});
 	}
 
-	/*Modals*/
+	//Modals
 	//Show modal
 	$('[data-link="modal"]').on('click', function(){
 		let link = $(this).attr('href');
@@ -30,7 +30,7 @@ $(document).ready(function(){
 		}
 	})
 
-	/*Stars rating functionality*/
+	//Stars rating functionality
 	let starIsClicked = false;
 
 	
@@ -38,54 +38,46 @@ $(document).ready(function(){
 			function(){
 				if(starIsClicked == false) {
 					$(this)
-						.attr('src', '/assets/img/Star_Fill.svg')
+						.attr('src', '/assets/img/star-fill.png')
 						.parent()
 						.prevAll()
 						.children('img')
-						.attr('src', '/assets/img/Star_Fill.svg');
+						.attr('src', '/assets/img/star-fill.png');
 				}
 			}, 
 			function(){
 
 				if(starIsClicked == false) {
 					$(this)
-						.attr('src', '/assets/img/Star_Outline.svg')
+						.attr('src', '/assets/img/star-stroke.png')
 						.parent()
 						.prevAll()
 						.children('img')
-						.attr('src', '/assets/img/Star_Outline.svg');
+						.attr('src', '/assets/img/star-stroke.png');
 				}
 			}
 		);
 
 	$('.stars-i > label > img').on('click', function(){
 		$(this)
-			.attr('src', '/assets/img/Star_Fill.svg')
+			.attr('src', '/assets/img/star-fill.png')
 			.siblings('input')
 			.prop('checked', true);
 		$(this)
 			.parent()
 			.nextAll()
 			.children('img')
-			.attr('src', '/assets/img/Star_Outline.svg');
+			.attr('src', '/assets/img/star-stroke.png');
 		$(this)	
 			.parent()
 			.prevAll()
 			.children('img')
-			.attr('src', '/assets/img/Star_Fill.svg');
+			.attr('src', '/assets/img/star-fill.png');
 
 			starIsClicked = true;
 
 			let starID = $('input[type="radio"]:checked').attr('id');
 
 			console.log(starID);
-	});
-
-	/*Try order number functionality*/
-	$('.status__form-b .form form .try-b a').on('click', function(){
-		let orderNumber = $(this).text();
-
-		$('#status-number').val(orderNumber);
-		$('.status__result').show();
 	})
 });
