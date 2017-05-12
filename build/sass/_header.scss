@@ -11,17 +11,17 @@
 	&__top-b {
 		min-height: 80px;
 		background-color: #000;
+		& .courier {
+			text-align: right;
+			margin-bottom: 5px;
+			& img {
+				width: 25px;
+				height: 25px;
+			}
+		}
 		& .right-b {
 			display: flex;
 			flex-direction: column;
-			& .courier {
-				text-align: right;
-				margin-bottom: 5px;
-				& img {
-					width: 25px;
-					height: 25px;
-				}
-			}
 		}
 	}
 	&__middle-b {

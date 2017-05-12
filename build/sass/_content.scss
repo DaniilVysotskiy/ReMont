@@ -70,7 +70,7 @@
 			display: inline-block;
 			position: absolute;
 			top: 4px;
-			right: 10px;
+			right: 5px;
 			width: 16px;
 			height: 16px;
 			background: url('../img/loupe.png') no-repeat;
@@ -112,6 +112,14 @@
 	background-color: #fff;
 	padding: 45px 0;
 	padding-bottom: 20px;
+	& h2 {
+		display: none;
+		text-align: center;
+		font-size: 22px;
+	    font-weight: 400;
+	    line-height: .864;
+	    margin-top: 0;
+	}
 	& ul {
 		display: flex;
 		justify-content: space-between;
@@ -618,7 +626,8 @@
 					}
 				}
 				& td:nth-of-type(2) {
-					& .flex-td {
+					& .flex-td,
+					& div {
 						display: flex;
 						flex-direction: column;
 						text-align: center;
@@ -644,12 +653,17 @@
 	padding: 50px 200px;
 	& ul {
 		display: flex;
-		flex-flow: row wrap;
+		flex-direction: row;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		list-style: none;
 		padding: 0;
 		margin: 0;
+		width: 100%;
+		box-sizing: border-box;
 		& li {
+			flex: 1 1 auto;
+			max-width: 300px;
 			min-width: 300px;
 			width: 300px;
 			display: flex;
@@ -775,4 +789,10 @@
 
 .owl-carousel .owl-item img {
 	height: 100%;
+}
+
+.btns-group {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }

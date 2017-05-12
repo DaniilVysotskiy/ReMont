@@ -3,28 +3,22 @@
 		content: none;
 	}
 }
-@media (max-width: 980px) {
-
-	/* General */
+@media (max-width: 1000px) {
+	.content-container {
+		padding: 0 20px;
+	}
 	.header__top-b,
 	.header__middle-b,
-	.header__bottom-b .repair ul {
+	.header__bottom-b {
 		padding-top: 20px;
 		padding-bottom: 20px;
 		flex-direction: column;
 	}
-
-	.header__top-b > div + div{
-		margin-top: 10px;
-	}
-	.header__top-b .right-b .courier {
-		text-align: center;
-	}
 	.header__middle-b nav {
 		margin-top: 10px;
-	}
-	.header__bottom-b .repair ul li.active::after {
-		content: none;
+		& ul li + li {
+			margin-left: 10px;
+		}
 	}
 
 	.header__middle-b nav ul,
@@ -36,9 +30,12 @@
 	.advantages-list ul,
 	.promo__other ul,
 	.status__result ul,
-	.flex-b {
-		flex-direction: column;
-		align-items: center;
+	.flex-b,
+	.model__desc {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: flex-end;
 		padding-left: 0;
 	}
 	
@@ -46,12 +43,22 @@
 	.section-announce ul li + li,
 	.section-advantages ul li + li,
 	.section-services ul li + li,
-	.footer .bottom-b ul li + li,
 	.advantages-list ul li + li,
 	.promo__other ul li + li,
 	.status__result ul li + li {
-		margin-left: 0 !important;
+		margin-left: 0;
 		margin-top: 30px;
+	}
+
+	.header__bottom-b .repair ul li + li {
+		margin-left: 30px;
+	}
+
+	.section-announce ul {
+		align-items: flex-start;
+		& li {
+			margin-top: 30px;
+		}
 	}
 
 	.feedback,
@@ -74,10 +81,14 @@
 		text-align: center;
 	}
 
-	.advantages-list ul {
-		align-items: flex-start;
-		max-width: 320px;
-		margin: 0 auto;
+	.feedback__form form,
+	.map-canvas {
+		min-width: 300px;
+	}
+
+	.promo__desc,
+	.promos-list ul {
+		justify-content: center;
 	}
 
 	.feedback__form .image-b {
@@ -98,14 +109,69 @@
 	.feedback__items-b ul .feedback__item__name {
 		margin-bottom: 5px;
 	}
+}
+@media (max-width: 568px) {
+
+	.header__top-b > div + div{
+		margin-top: 10px;
+	}
+	.header__top-b .right-b .courier {
+		text-align: center;
+	}
+	.header__bottom-b .repair ul li.active::after {
+		content: none;
+	}
+	
+
+	.header__middle-b nav ul,
+	.header__bottom-b .repair ul,
+	.section-announce ul,
+	.section-advantages ul,
+	.section-services ul,
+	.footer .bottom-b ul,
+	.advantages-list ul,
+	.promo__other ul,
+	.status__result ul,
+	.flex-b,
+	.model__desc {
+		flex-direction: column;
+		align-items: center;
+		padding-left: 0;
+	}
+	
+	.header__bottom-b .repair ul li + li,
+	.section-announce ul li + li,
+	.section-advantages ul li + li,
+	.section-services ul li + li,
+	.footer .bottom-b ul li + li,
+	.advantages-list ul li + li,
+	.promo__other ul li + li,
+	.status__result ul li + li {
+		margin-left: 0 !important;
+		margin-top: 30px;
+	}
+
+	.status__result ul li + li {
+		margin-top: 10px;
+	}
+
+	.section-slider {
+		display: none;
+	}
+
+	.advantages-list ul {
+		align-items: flex-start;
+		max-width: 320px;
+		margin: 0 auto;
+	}
+
+	
 	.map-canvas {
 		min-width: 100%;
 		margin-right: 0;
 	}
 
-	.content-container {
-		padding: 0 20px;
-	}
+
 
 	.footer .contacts-b .content-container {
 		flex-direction: column;
@@ -164,6 +230,11 @@
 		padding: 20px 30px;
 		min-width: 300px;
 	}
+
+
+	.section-announce h2 {
+		display: block;
+	}
 }
 @media (max-width: 320px) {
 	.status__form-b .form form > div input {
@@ -175,4 +246,5 @@
 		width: 100%;
 		margin-left: 0;
 	}
+
 }
