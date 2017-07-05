@@ -569,6 +569,7 @@
 	&__desc {
 		display: flex;
 		flex-flow: row wrap;
+		align-items: flex-start;
 		margin: 50px 0;
 		& > div:first-child {
 			margin-right: 20px;
@@ -662,9 +663,7 @@
 		width: 100%;
 		box-sizing: border-box;
 		& li {
-			flex: 1 1 auto;
-			max-width: 300px;
-			min-width: 300px;
+			min-height: 150px;
 			width: 300px;
 			display: flex;
 			flex-flow: row nowrap;
@@ -672,7 +671,10 @@
 			& div:first-child {
 				margin-right: 20px;
 				display: flex;
-				align-items: flex-end;
+				justify-content: center;
+				align-items: center;
+				min-width: 100px;
+				overflow: hidden;
 			}
 			& div:last-child {
 				display: flex;
